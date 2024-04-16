@@ -92,6 +92,7 @@ public class ASCIILevelLoader : MonoBehaviour
                     
                     //player
                     case 'P':
+                        newObject = Instantiate(Resources.Load<GameObject>("Prefabs/Player"));
                         break;
                     
                     //coin
@@ -101,6 +102,10 @@ public class ASCIILevelLoader : MonoBehaviour
                     
                     //demon? (hazard)
                     case 'D':
+                        break;
+                    
+                    //boba shop (temptation)
+                    case 'B':
                         break;
                     
                     //exit (next level)
