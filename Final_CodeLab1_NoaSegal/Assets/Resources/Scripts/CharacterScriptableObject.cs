@@ -10,7 +10,7 @@ public class CharacterScriptableObject : ScriptableObject
 {
   
    
-   //name of character
+   //name of character --> this will be the god you get out of an array after the prayers are dequeued
    
-   //character dialogue
+   //character dialogue --> what the god will say
 }

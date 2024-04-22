@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using File = System.IO.File;
@@ -14,8 +15,9 @@ public class ASCIILevelLoader : MonoBehaviour
     public int currentLevel = 0;
 
     private string FILE_PATH;
-    //TODO: implement prefabs and build the levels
     //TODO: make GameManagerScript
+
+    public TextMeshProUGUI demonText;
     
     //Property to change levels:
     public int CurrentLevel
@@ -79,7 +81,7 @@ public class ASCIILevelLoader : MonoBehaviour
             for (int xLevelPos = 0; xLevelPos < characters.Length; xLevelPos++)
             {
                 char c = characters[xLevelPos];
-                Debug.Log(c);
+                //Debug.Log(c);
 
                 GameObject newObject = null;
                 
@@ -93,6 +95,9 @@ public class ASCIILevelLoader : MonoBehaviour
                     //player
                     case 'P':
                         newObject = Instantiate(Resources.Load<GameObject>("Prefabs/Player"));
+                        //parent main camera to player with slight offset:
+                        Camera.main.transform.parent = newObject.transform;
+                        Camera.main.transform.position = new Vector3(0, 0, -20);
                         break;
                     
                     //coin
@@ -100,12 +105,17 @@ public class ASCIILevelLoader : MonoBehaviour
                         newObject = Instantiate(Resources.Load<GameObject>("Prefabs/Coin"));
                         break;
                     
-                    //demon? (hazard)
+                    //demon? (hazard, makes you lose 1 coin)
                     case 'D':
+                        newObject = Instantiate(Resources.Load<GameObject>("Prefabs/Demon"));
+                        //TODO: demonText does not appear over the demon prefabs
+                        demonText.transform.parent = newObject.transform;
+                        demonText.transform.position = new Vector3(10, 10, 0);
                         break;
                     
-                    //boba shop (temptation)
+                    //boba shop (temptation, takes you to a different scene and you can spend your coins)
                     case 'B':
+                        newObject = Instantiate(Resources.Load<GameObject>("Prefabs/BobaShop"));
                         break;
                     
                     //exit (next level)
@@ -114,6 +124,7 @@ public class ASCIILevelLoader : MonoBehaviour
                     
                     //church (end goal)
                     case 'G':
+                        newObject = Instantiate(Resources.Load<GameObject>("Prefabs/Church"));
                         break;
                 }
                 //if there is a new object, parent it to the gameObject parent
