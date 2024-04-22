@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BobaScene.unity
     guid: de673847e50dacf47addb814d209ef26
+  - enabled: 1
+    path: Assets/Scenes/ChurchScene.unity
+    guid: 555d9a35dbd9ab84a81a47448357afe0
   m_configObjects: {}

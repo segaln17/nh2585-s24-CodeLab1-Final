@@ -37,7 +37,6 @@ public class WASDScript : MonoBehaviour
         }
     }
     
-    //TODO: this currently does not work to reset the dialogue text after the object has been collided with:
     private void OnCollisionExit(Collision other)
     {
         GameManagerScript.instance.dialogueText.text = "I oughta get to church!";

@@ -2,9 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class BobaShopScript : MonoBehaviour
+public class DemonScript : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -17,10 +16,10 @@ public class BobaShopScript : MonoBehaviour
     {
         
     }
-//THIS DOES NOT CURRENTLY WORK:
-    private void OnTriggerEnter(Collider other)
+
+    private void OnCollisionEnter(Collision other)
     {
-        Debug.Log("Boba time!");
-        SceneManager.LoadScene("Scenes/BobaScene");
+        GameManagerScript.instance.money--;
+        GameManagerScript.instance.dialogueText.text = "A demon?! Maybe I should sin...";
     }
 }
