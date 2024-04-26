@@ -20,6 +20,6 @@ public class ChurchScript : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Church!");
-        //SceneManager.LoadScene("Scenes/ChurchScene");
+        SceneManager.LoadScene("Scenes/ChurchScene");
     }
 }

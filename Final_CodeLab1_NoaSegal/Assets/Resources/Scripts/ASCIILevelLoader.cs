@@ -97,7 +97,7 @@ public class ASCIILevelLoader : MonoBehaviour
                         newObject = Instantiate(Resources.Load<GameObject>("Prefabs/Player"));
                         //parent main camera to player with slight offset:
                         Camera.main.transform.parent = newObject.transform;
-                        Camera.main.transform.position = new Vector3(0, 0, -20);
+                        Camera.main.transform.position = new Vector3(0, 0, -15);
                         break;
                     
                     //coin
