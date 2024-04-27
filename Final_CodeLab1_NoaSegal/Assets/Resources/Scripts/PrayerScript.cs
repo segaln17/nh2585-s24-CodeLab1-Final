@@ -96,6 +96,22 @@ public class PrayerScript : MonoBehaviour
 
     public void Indulgence()
     {
+        if (GameManagerScript.instance.money >= 5)
+        {
+            priestText.text = "With this certificate, you'll surely go to heaven! \nAnd I'll finally be able to afford my Falcon 7X jet! \nSame model as my favorite pop star. \nYAHOOO!!!";
+            if (GameManagerScript.instance.money >= 5)
+            {
+                GameManagerScript.instance.money -= 5;
+            }
+            else
+            {
+                GameManagerScript.instance.money = 0;   
+            }
+        }
+        else
+        {
+            priestText.text = "Oh, you're poor... You're probably going to hell.";
+        }
         //TODO: use money to buy indulgence and update priestText to say you're going to heaven
     }
 }
