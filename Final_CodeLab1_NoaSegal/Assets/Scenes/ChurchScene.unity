@@ -2519,7 +2519,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -132, y: 45.3}
+  m_AnchoredPosition: {x: -132, y: 61.1}
   m_SizeDelta: {x: 181.7, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2106898527
@@ -2542,8 +2542,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "My child. \nTo whom will you pray to save your immortal soul?\n\nOr, to
-    guarantee your spot in Bug Heaven, you could always buy an indulgence..."
+  m_text: "My child. \nTo whom will you pray to save your immortal soul? Mix and
+    match the targets of your prayers for best results!\n\nOr, to guarantee your
+    spot in Bug Heaven, you could always buy an indulgence..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2570,8 +2571,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15.1
-  m_fontSizeBase: 15.1
+  m_fontSize: 14.75
+  m_fontSizeBase: 14.75
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
