@@ -17,6 +17,7 @@ public class CoinScript : MonoBehaviour
         
     }
 
+    //when the player hits a coin, add money and update display text, then destroy the coin
     private void OnCollisionEnter(Collision other)
     {
         GameManagerScript.instance.money++;

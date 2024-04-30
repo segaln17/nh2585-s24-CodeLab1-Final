@@ -8,10 +8,9 @@ using UnityEngine;
    menuName = "NewCharacter", order = 0),]
 public class CharacterScriptableObject : ScriptableObject
 {
-    public string godName;
-    public string godDialogue;
-
     //name of character --> this will be the god you get out of an array after the prayers are dequeued
-
+    public string godName;
+    
     //character dialogue --> what the god will say
+    public string godDialogue;
 }

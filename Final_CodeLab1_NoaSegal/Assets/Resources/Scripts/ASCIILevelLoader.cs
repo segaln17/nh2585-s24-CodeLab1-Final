@@ -8,15 +8,19 @@ using File = System.IO.File;
 
 public class ASCIILevelLoader : MonoBehaviour
 {
+    //making the ASCIILevelLoader a singleton
     public static ASCIILevelLoader Instance;
 
+    //level that is set within this script
     private GameObject level;
 
+    //current level index
     public int currentLevel = 0;
 
+    //file path for saving the level and loading it
     private string FILE_PATH;
-    //TODO: make GameManagerScript
-
+    
+    //text that ideally would appear above the demons in-level (does not currently)
     public TextMeshProUGUI demonText;
     
     //Property to change levels:
@@ -52,19 +56,20 @@ public class ASCIILevelLoader : MonoBehaviour
     {
         //set file path to get the text files for the ASCII level loader:
         FILE_PATH = Application.dataPath + "/Resources/Levels/LevelNum.txt";
+        //load the level from the text file:
         LoadLevel();
     }
 
     public void LoadLevel()
     {
-        Debug.Log("next level");
+        //Debug.Log("next level");
         
-        //get rid of the last one
+        //get rid of the previous level
         Destroy(level);
         
         //create a new gameObject parent to hold everything from the level
         level = new GameObject("Level Objects");
-        new GameObject("debugObject");
+        //new GameObject("debugObject");
 
         //create an array of strings to contain the level contents from the text file
         //update based on file name
@@ -80,9 +85,11 @@ public class ASCIILevelLoader : MonoBehaviour
 
             for (int xLevelPos = 0; xLevelPos < characters.Length; xLevelPos++)
             {
+                //add the character to the array of characters at this position
                 char c = characters[xLevelPos];
                 //Debug.Log(c);
 
+                //default case if there is no character:
                 GameObject newObject = null;
                 
                 //instantiate the prefabs based on what character it is
@@ -105,7 +112,7 @@ public class ASCIILevelLoader : MonoBehaviour
                         newObject = Instantiate(Resources.Load<GameObject>("Prefabs/Coin"));
                         break;
                     
-                    //demon? (hazard, makes you lose 1 coin)
+                    //demon (hazard, makes you lose 1 coin)
                     case 'D':
                         newObject = Instantiate(Resources.Load<GameObject>("Prefabs/Demon"));
                         //TODO: demonText does not appear over the demon prefabs
@@ -118,13 +125,13 @@ public class ASCIILevelLoader : MonoBehaviour
                         newObject = Instantiate(Resources.Load<GameObject>("Prefabs/BobaShop"));
                         break;
                     
-                    //exit (next level)
-                    case 'E':
-                        break;
-                    
                     //church (end goal)
                     case 'G':
                         newObject = Instantiate(Resources.Load<GameObject>("Prefabs/Church"));
+                        break;
+                    
+                    //exit (next level --> would be implemented if I added another level)
+                    case 'E':
                         break;
                 }
                 //if there is a new object, parent it to the gameObject parent

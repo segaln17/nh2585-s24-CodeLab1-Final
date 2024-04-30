@@ -17,6 +17,7 @@ public class ChurchScript : MonoBehaviour
         
     }
     
+    //when the player collides with the church, go to the church scene
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Church!");

@@ -17,6 +17,7 @@ public class DemonScript : MonoBehaviour
         
     }
 
+    //when the player hits a demon, they lose money and their text gets updated
     private void OnCollisionEnter(Collision other)
     {
         GameManagerScript.instance.money--;

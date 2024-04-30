@@ -17,7 +17,7 @@ public class BobaShopScript : MonoBehaviour
     {
         
     }
-//THIS DOES NOT CURRENTLY WORK:
+//when the player hits the boba shop, go to the boba shop scene
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Boba time!");
