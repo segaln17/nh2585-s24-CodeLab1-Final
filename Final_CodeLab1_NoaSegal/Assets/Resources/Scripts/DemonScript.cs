@@ -21,6 +21,6 @@ public class DemonScript : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         GameManagerScript.instance.money--;
-        GameManagerScript.instance.dialogueText.text = "A demon?! Oh no...";
+        GameManagerScript.instance.dialogueText.text = "A demon?! Maybe I should... buy boba...";
     }
 }
