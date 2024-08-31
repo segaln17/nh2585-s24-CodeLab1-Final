@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4143586254257190783}
   - component: {fileID: 526852222748559576}
   - component: {fileID: 4732062067998363482}
+  - component: {fileID: -2094696856889985285}
   m_Layer: 0
   m_Name: Demon
   m_TagString: Untagged
@@ -119,3 +120,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-2094696856889985285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4971668621013136859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8321327b15fe694abd5266b2cbcad1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sparkleEffect: {fileID: 5824670795371433373, guid: f6fd568b816c64943a44efc3add3a881, type: 3}

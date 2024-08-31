@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 6c69131f7c881a54dad57651b1deede7, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.05589126, g: 0.05551225, b: 0.12229451, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -231,15 +231,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.802694, g: 0.55806726, b: 0.8742138, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 6c986ef56b209ea4b90b03ae8608017c, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -371,8 +371,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: d3fd5343b3c90b34997ea740c0197db0, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -589,8 +589,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294041325
+  m_fontColor: {r: 0.929721, g: 0.8692298, b: 0.9433962, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -685,7 +685,7 @@ RectTransform:
   m_GameObject: {fileID: 662358778}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1849106708}
@@ -856,8 +856,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4287072154
+  m_fontColor: {r: 0.6037736, g: 0.52972585, b: 0.52972585, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1039,8 +1039,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 9887c11e574c4654d973a7aa54944fc0, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1123,8 +1123,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4281479880
+  m_fontColor: {r: 0.78616345, g: 0.19530463, b: 0.19530463, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1499,8 +1499,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 109.4, y: 44.7}
-  m_SizeDelta: {x: 163, y: 100}
+  m_AnchoredPosition: {x: 109.4, y: 80.8}
+  m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1314034827
 MonoBehaviour:
@@ -1531,8 +1531,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4288740860
-  m_fontColor: {r: 0.98913336, g: 0.99371064, b: 0.62810004, a: 1}
+    rgba: 2929786364
+  m_fontColor: {r: 0.98913336, g: 0.99371064, b: 0.62810004, a: 0.68235296}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1808,8 +1808,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4288825490
+  m_fontColor: {r: 0.57401913, g: 0.2816541, b: 0.63522005, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1991,8 +1991,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: fc3c0defe889e53429e8d6eef1808253, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2124,8 +2124,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: f745fcb77453d514b8dceb061a1e39a1, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2201,8 +2201,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: You're going to hell!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 864bce7929614ab44bf6cbc201a74b0c, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 78e6e54e9e24f114396377c30a41ab09, type: 2}
+  m_sharedMaterial: {fileID: 8037553227044629656, guid: 78e6e54e9e24f114396377c30a41ab09, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2226,8 +2226,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 19.11
-  m_fontSizeBase: 19.11
+  m_fontSize: 25.73
+  m_fontSizeBase: 25.73
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2265,7 +2265,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1805954102
@@ -2444,7 +2444,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Buy Indulgence (5)
+  m_text: Buy Indulgence !!!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9f14fb7c00105fb4893f4c316c29d0ca, type: 2}
   m_sharedMaterial: {fileID: -8909252958471614925, guid: 9f14fb7c00105fb4893f4c316c29d0ca, type: 2}
@@ -2556,7 +2556,7 @@ Camera:
   m_GameObject: {fileID: 1965256348}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.09208492, g: 0.2319529, b: 0.3018868, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -2674,8 +2674,8 @@ MonoBehaviour:
     match the targets of your prayers for best results!\n\nOr, to guarantee your
     spot in Bug Heaven, you could always buy an indulgence..."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 864bce7929614ab44bf6cbc201a74b0c, type: 2}
-  m_sharedMaterial: {fileID: 3609290937026943431, guid: 864bce7929614ab44bf6cbc201a74b0c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 45b0b7dfcafea3e46a3fcff01f8936f0, type: 2}
+  m_sharedMaterial: {fileID: -6506262347491869876, guid: 45b0b7dfcafea3e46a3fcff01f8936f0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2699,8 +2699,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14.75
-  m_fontSizeBase: 14.75
+  m_fontSize: 14.9
+  m_fontSizeBase: 14.9
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

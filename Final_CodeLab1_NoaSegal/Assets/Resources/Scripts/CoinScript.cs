@@ -21,6 +21,7 @@ public class CoinScript : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         GameManagerScript.instance.money++;
+        Instantiate(GameManagerScript.instance.coinEffect, transform.position, transform.rotation);
         GameManagerScript.instance.dialogueText.text = "Wow, a coin! Could use this to save up!";
         Destroy(gameObject);
     }

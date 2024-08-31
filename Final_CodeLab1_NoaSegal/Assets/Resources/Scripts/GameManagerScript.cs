@@ -18,6 +18,8 @@ public class GameManagerScript : MonoBehaviour
     //text that displays the dialogue and is updated in script
     public TextMeshProUGUI dialogueText;
 
+    public GameObject coinEffect;
+    public GameObject demonEffect;
     
     //singleton behavior
     private void Awake()
