@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PrayerScript : MonoBehaviour
 
@@ -33,6 +34,8 @@ public class PrayerScript : MonoBehaviour
     public CharacterScriptableObject rotGod;
     public CharacterScriptableObject centiGod;
     public CharacterScriptableObject demonGod;
+
+    public Button LeaveButton;
     
     // Start is called before the first frame update
     void Start()
@@ -92,6 +95,8 @@ public class PrayerScript : MonoBehaviour
         godResultText.gameObject.SetActive(true);
         //display the godDialogue of the first scriptable object queued
         godResultText.text = godList[0].godDialogue;
+        
+        LeaveButton.gameObject.SetActive(true);
     }
 
     void ShowQueueEffects()
