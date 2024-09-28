@@ -19,5 +19,6 @@ public class StartGame : MonoBehaviour
     public void StartChurch()
     {
         SceneManager.LoadScene("ASCIIScene");
+        //Resources.Load("Levels/Level0");
     }
 }

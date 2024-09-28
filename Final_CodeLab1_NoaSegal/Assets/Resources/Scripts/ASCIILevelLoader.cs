@@ -56,6 +56,8 @@ public class ASCIILevelLoader : MonoBehaviour
     {
         //set file path to get the text files for the ASCII level loader:
         FILE_PATH = Application.dataPath + "/Resources/Levels/LevelNum.txt";
+
+        Resources.Load("Level0");
         //load the level from the text file:
         LoadLevel();
     }
