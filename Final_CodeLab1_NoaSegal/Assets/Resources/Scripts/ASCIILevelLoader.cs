@@ -75,7 +75,8 @@ public class ASCIILevelLoader : MonoBehaviour
 
         //create an array of strings to contain the level contents from the text file
         //update based on file name
-        string[] lines = File.ReadAllLines(FILE_PATH.Replace("Num", currentLevel + ""));
+        //string[] lines = File.ReadAllLines(FILE_PATH.Replace("Num", currentLevel + ""));
+        string[] lines = Resources.Load<TextAsset>("Level0").text.Split('\n');
 
         //loop through the array of strings and through the characters in each line
         for (int yLevelPos = 0; yLevelPos < lines.Length; yLevelPos++)
